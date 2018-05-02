@@ -10,19 +10,26 @@ desc:       multiplys bet by three when u lose, receive double bid when u win
 #starting variables
 coins = int(input('enter an amount of coins you would like to start with: '))
 startingbid = int(input('enter a bid you would like to start with: '))
+
 counter = 0
 bid = 0
 bid = int(bid)
 counter = int(counter)
 bid = startingbid
+highscore = 0
+highscore = int(highscore)
+
 #if you have still have money.
 while coins > 0:
     
     from random import randint
     roll = randint(0, 48)
     
-    #a way to keep track of your money
+    #a way to keep track of your money and total rolls
     print(coins)
+    if coins > highscore:
+        highscore = coins
+    
     counter = (counter + 1)
     
     #removes your bid from you balance, if you win you will get it back X2
@@ -40,7 +47,8 @@ while coins > 0:
         bid = bid*3
 
         
-print(str(counter) + 'rolls')        
+print(str(counter) + ' rolls')
+print('highest coins was ' + str(highscore))
         
     
         

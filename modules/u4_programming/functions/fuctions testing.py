@@ -22,7 +22,6 @@ print(z)
 def double(x):
     return(x*2)
 
-#z = int(input('Enter a Number: '))
 z = int(input('Enter a Number: '))
 z = int(z)
 z = double(z)

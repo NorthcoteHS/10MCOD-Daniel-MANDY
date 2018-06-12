@@ -30,6 +30,7 @@ A = int(A)
 Bb = int(Bb)
 B = int(B)
 
+scaletype = 'major'
 
 scaletype = input('Please enter a type of scale(major): ')
 key = input('Please enter the starting note(use flats only No sharps eg Db or Bb): ')
@@ -73,54 +74,125 @@ if key == 'Bb':
 if key == 'B':
     key = 12
     
-if scaletype == major:
+if scaletype == 'major':
     note1 = key
-    note2 = key+2
-    note3 = key+4
-    note4 = key+5
-    note5 = key+7
-    note6 = key+9
-    note7 = key+11
-    note8 = key
+    
 
-if note1 == 1:
-    note1 = 'C'
+    if note1 == 1:
+        note1 = 'C'
+        note2 = 'D'
+        note3 = 'E'
+        note4 = 'F'
+        note5 = 'G'
+        note6 = 'A'
+        note7 = 'B'
     
-if note1 == 2:
-    note1 = 'Db'
+    if note1 == 2:
+        note1 = 'Db'
+        note2 = 'Eb'
+        note3 = 'F'
+        note4 = 'Gb'
+        note5 = 'Ab'
+        note6 = 'Bb'
+        note7 = 'C'
     
-if note1 == 3:
-    note1 = 'D'
+    if note1 == 3:
+        note1 = 'D'
+        note2 = 'E'
+        note3 = 'Gb'
+        note4 = 'G'
+        note5 = 'A'
+        note6 = 'B'
+        note7 = 'Db'
     
-if note1 == 4:
-    note1 = 'Eb'
+    if note1 == 4:
+        note1 = 'Eb'
+        note2 = 'F'
+        note3 = 'G'
+        note4 = 'Ab'
+        note5 = 'Bb'
+        note6 = 'C'
+        note7 = 'D'
     
-if note1 == 5:
-    note1 = 'E'
+    if note1 == 5:
+        note1 = 'E'
+        note2 = 'Gb'
+        note3 = 'Ab'
+        note4 = 'A'
+        note5 = 'B'
+        note6 = 'Db'
+        note7 = 'Eb'
     
-if note1 == 6:
-    note1 = 'F'
+    if note1 == 6:
+        note1 = 'F'
+        note2 = 'G'
+        note3 = 'A'
+        note4 = 'Bb'
+        note5 = 'C'
+        note6 = 'D'
+        note7 = 'E'
     
-if note1 == 7:
-    note1 = 'Gb'
+    if note1 == 7:
+        note1 = 'Gb'
+        note2 = 'Ab'
+        note3 = 'Bb'
+        note4 = 'B'
+        note5 = 'Db'
+        note6 = 'Eb'
+        note7 = 'F'
+        
+    if note1 == 8:
+        note1 = 'G'
+        note2 = 'A'
+        note3 = 'B'
+        note4 = 'C'
+        note5 = 'D'
+        note6 = 'E'
+        note7 = 'Gb'
+        
+    if note1 == 9:
+        note1 = 'Ab'
+        note2 = 'Bb'
+        note3 = 'C'
+        note4 = 'Db'
+        note5 = 'Eb'
+        note6 = 'F'
+        note7 = 'G'
+        
     
-if note1 == 8:
-    note1 = 'G'
+    if note1 == 10:
+        note1 = 'A'
+        note2 = 'B'
+        note3 = 'Db'
+        note4 = 'E'
+        note5 = 'F'
+        note6 = 'Gb'
+        note7 = 'Ab'
+        
     
-if note1 == 9:
-    note1 = 'Ab'
+    if note1 == 11:
+        note1 = 'Bb'
+        note2 = 'C'
+        note3 = 'D'
+        note4 = 'Eb'
+        note5 = 'F'
+        note6 = 'G'
+        note7 = 'A'
     
-if note1 == 10:
-    note1 = 'A'
+    if note1 == 12:
+        note1 = 'B'
+        note2 = 'Db'
+        note3 = 'Eb'
+        note4 = 'E'
+        note5 = 'Gb'
+        note6 = 'Ab'
+        note7 = 'Bb'
+        
+        
+print(note1, note2, note3, note4, note5, note6, note7, note1)
+        
     
-if note1 == 11:
-    note1 = 'Bb'
-    
-if note1 == 12:
-    note1 = 'B'
-    
-if note1 == 13:
-    note1 = 'D'
+
    
 
 
